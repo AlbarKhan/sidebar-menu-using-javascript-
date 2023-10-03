@@ -1,0 +1,182 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+.main {
+    position: relative;
+}
+
+.icon {
+    font-size: 25px;
+}
+/* navbar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    /* position: sticky; */
+    width: 100%;
+    font-weight: 400px;
+    position: fixed;
+    background-color: lightgrey;
+}
+.navBar .SideMenu {
+    padding-top: 25px ;
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 25px;
+    position: absolute;
+    transition: 0.3s;
+}
+.navBar .logo {
+    padding: 20px 30px;   
+    font-size: 25px;
+}
+.navBar .mail {
+    padding: 20px 30px;
+    font-size: 25px;
+}
+.links {
+    display: none;
+}
+.links a {
+    display: block;
+    text-decoration: none;
+    margin-top: 40px;
+    font-weight: 400px;
+    font-size: 18px;
+    padding: 0px 30px;
+}
+/* navbar end */
+
+/* blogpost */
+.blog-wrapper {
+    width: 100%;
+    padding-top: 100px;
+}
+.blog-wrapper .frow {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 0px 45px;
+    justify-content: center;
+}
+.frow .box {
+    margin-top: 20px;
+    width: 100%;
+}
+.frow .box img{
+    width: 100%;
+}
+/* blogpost end */
+
+/* about section */
+.about-section {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+.about-section img {
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+.about-section p {
+    margin: 0px 30px;
+}
+/* about section end */
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 50px 0px;
+    overflow: hidden;
+}
+footer div{
+    width: 90%;
+    text-align: start;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+footer p{
+    text-align: start;
+}
+footer h3 {
+    text-align: start;
+}
+
+footer .blogpost {
+    text-align: start;
+    overflow: auto;
+}
+
+footer .blogpost a {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 60px;
+}
+/* footer end */
+
+/* individuals */
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'karma',sans-serif;
+}
+p{
+    font-size: 15px;
+    font-family: 'karma',sans-serif;
+    text-align: center;
+}
+h3 {
+    font-size: 24px;
+    font-family: 'karma', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+b {
+    font-size: 20px;
+}
+
+/* individuals end */
+
+@media (max-width:1023px){
+    
+
+    .blog-wrapper .frow{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:767px){
+    footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .blog-wrapper .frow{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .navBar {
+        font-size: 18px;
+    }
+    .links a {
+        padding: 0px 0px;
+    }
+
+    .navBar .logo {
+        padding: 20px 0px;
+    }
+    .navBar .mail {
+        padding: 20px 15px;
+    }
+    .navBar .SideMenu {
+        padding-left: 10px;
+    }
+}
+
+
+
