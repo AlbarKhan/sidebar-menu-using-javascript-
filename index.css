@@ -21,7 +21,7 @@
     position: fixed;
     background-color: lightgrey;
 }
-.navBar .SideMenu {
+.navBar .side-menu {
     padding-top: 25px ;
     padding-left: 30px;
     padding-right: 15px;
@@ -173,7 +173,7 @@ b {
     .navBar .mail {
         padding: 20px 15px;
     }
-    .navBar .SideMenu {
+    .navBar .side-menu {
         padding-left: 10px;
     }
 }
